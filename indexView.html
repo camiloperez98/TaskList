@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+        <div class="container-head">
+            <input type="text" id="new-task-input" placeholder="Nueva Tarea...">
+            <button id="add-task-button" style="margin-left: 10px;">Agregar</button>
+        </div><br>
+        <select id="task-filter">
+            <option value="all">Todas</option>
+            <option value="complet">Completadas</option>
+            <option value="pend">Pendientes</option>
+        </select>        
+        <br>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="./function.js"></script>
+</body>
+
+</html>
